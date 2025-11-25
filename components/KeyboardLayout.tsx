@@ -203,7 +203,7 @@ export const KeyboardLayout: React.FC<KeyboardLayoutProps> = ({
         // For strict "Select Pinyin -> Select Char" flow, just showing chars is cleaner.
         // But design "step 03" says "pu related words and chars".
         // Let's check common phrases starting with this pinyin.
-        Object.entries(COMMON_PHRASES).forEach(([pinyinKey, phrases]) => {
+        Object.entries(COMMON_PHRASES).forEach(([pinyinKey, _phrases]) => {
             if (pinyinKey.startsWith(focusedPinyinCandidate.str)) {
                 // Calculate length
                 // This is complex because pinyinKey has apostrophes. 
